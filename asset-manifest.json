@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/guru-group/static/css/main.3ab13750.css",
+    "main.js": "/guru-group/static/js/main.64737aeb.js",
+    "index.html": "/guru-group/index.html",
+    "static/media/strelochka.svg": "/guru-group/static/media/strelochka.d38a000cdc7fb0acec39.svg",
+    "main.3ab13750.css.map": "/guru-group/static/css/main.3ab13750.css.map",
+    "main.64737aeb.js.map": "/guru-group/static/js/main.64737aeb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ab13750.css",
+    "static/js/main.64737aeb.js"
+  ]
+}
