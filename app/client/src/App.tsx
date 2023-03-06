@@ -1,23 +1,24 @@
 import React from 'react';
-import styled from 'styled-components';
 import { getProducts } from './api/products';
-import {Product} from "./interfaces/Product";
+import {Cards} from "./interfaces/Cards";
+import {CardsWrapper} from "./containers";
 
 const App: React.FC = () => {
-  const [products, setProducts] = React.useState<Product[]>();
+  const [products, setProducts] = React.useState<Cards>({cards: []});
 
   React.useEffect(() => {
     getProducts().then((res) => {
       setProducts({
         ...products,
-        ...res
+        cards: [...res]
       });
     })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <div className="App">
-
+    <div className="app">
+      {products?.cards && <CardsWrapper cards={products.cards} />}
     </div>
   );
 }

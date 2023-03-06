@@ -1,0 +1,48 @@
+@import '../../asseets/styles/variables.scss';
+
+.slide {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.current {
+  z-index: 2;
+}
+
+.nextSlide {
+  animation: next-slide-animation 0.7s;
+}
+
+.prevSlide {
+  animation: prev-slide-animation 0.7s;
+}
+
+.previous {
+  z-index: 1;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes next-slide-animation {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes prev-slide-animation {
+  0% {
+    right: 100%;
+  }
+
+  100% {
+    right: 0%;
+  }
+}

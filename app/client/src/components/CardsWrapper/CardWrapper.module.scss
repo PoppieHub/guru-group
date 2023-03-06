@@ -1,0 +1,60 @@
+@import '../../asseets/styles/variables.scss';
+
+.title {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 25px auto 8px 32px;
+}
+
+.cardWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 24px;
+  justify-items: center;
+
+  & > div {
+    box-sizing: content-box;
+    margin-bottom: 24px;
+    width: 100%;
+    min-width: 224px;
+  }
+  .row {
+    grid-column: 1 / -1;
+  }
+}
+
+.showMoreWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.notMoreWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: $lightBlue;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.loaderWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .cardWrapper {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 24px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .cardWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 540px) {
+  .cardWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

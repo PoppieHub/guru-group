@@ -1,0 +1,25 @@
+@import '../../asseets/styles/variables.scss';
+
+.iconGrey {
+  &:hover path,
+  &:active path {
+    fill: $lightBlue;
+  }
+
+  path {
+    fill: #C4C4C4;
+    stroke: none;
+  }
+}
+
+.iconWhite {
+  &:hover path,
+  &:active path {
+    fill: $lightBlue;
+  }
+
+  path {
+    fill: white;
+    stroke: #2C2C2C;
+  }
+}
