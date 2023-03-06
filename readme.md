@@ -1,4 +1,4 @@
-## Guru-group.
+## Guru-group
 
 ----
 
